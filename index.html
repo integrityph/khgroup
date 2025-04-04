@@ -3,33 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K H Trading Group Inc.</title>
-    <link rel="stylesheet" href="style.css">
+    <title>K H Trading Group Inc. - Blockchain Innovation</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="logo">K H Trading Group Inc.</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="K H Trading Group Inc. Logo">
+                    </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="home">
+    <main>
         <section class="hero">
-            <h1>Revolutionizing Blockchain Technology</h1>
-            <p>K H Trading Group Inc. is dedicated to developing innovative blockchain solutions.</p>
-            <a href="products.html" class="button">Explore Tejory</a>
+            <div class="container">
+                <h1>Innovating the Future with Blockchain Technology</h1>
+                <p>K H Trading Group Inc. leverages cutting-edge blockchain solutions to empower businesses and individuals in the decentralized world.</p>
+                <a href="services.html" class="cta-button">Explore Our Services</a>
+            </div>
         </section>
-        <section class="intro">
-            <h2>About Us</h2>
-            <p>We are a technology company focused on advancing blockchain technology. Our flagship product, Tejory, provides secure hardware wallet solutions.</p>
+
+        <section class="about-brief">
+            <div class="container">
+                <h2>Who We Are</h2>
+                <p>Based in New York, K H Trading Group Inc. is at the forefront of blockchain development, offering secure, scalable, and transformative technology solutions. We specialize in creating robust infrastructure and user-friendly applications for the evolving digital landscape.</p>
+            </div>
         </section>
+
+         <section class="key-focus">
+             <div class="container">
+                 <h2>Our Focus Areas</h2>
+                 <div class="focus-items">
+                     <div class="focus-item">
+                         <h3>Secure Hardware</h3>
+                         <p>Developing state-of-the-art hardware solutions like the Tejory wallet for ultimate asset security.</p>
+                     </div>
+                     <div class="focus-item">
+                         <h3>Corporate Solutions</h3>
+                         <p>Implementing tailored blockchain systems to enhance transparency and efficiency for businesses.</p>
+                     </div>
+                     <div class="focus-item">
+                         <h3>Asset Tokenization</h3>
+                         <p>Unlocking liquidity and new investment opportunities through digital asset tokenization.</p>
+                     </div>
+                 </div>
+            </div>
+         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 K H Trading Group Inc. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> K H Trading Group Inc. All Rights Reserved.</p>
+            <p>5911 56TH Ave, Maspeth, New York 11378-2324, United States</p>
+        </div>
     </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

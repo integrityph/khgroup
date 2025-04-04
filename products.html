@@ -3,36 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tejory Hardware Wallet</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Our Products - K H Trading Group Inc.</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="logo">K H Trading Group Inc.</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <div class="logo">
+                 <a href="index.html">
+                    <img src="images/logo.png" alt="K H Trading Group Inc. Logo">
+                 </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="products">
-        <section class="product-details">
-            <h2>Tejory Hardware Wallet</h2>
-            <img src="tejory-image.jpg" alt="Tejory Hardware Wallet">
-            <p>The Tejory hardware wallet offers unparalleled security for your digital assets.</p>
-            <ul>
-                <li>Secure offline storage</li>
-                <li>Multi-currency support</li>
-                <li>Easy-to-use interface</li>
-                <li>Advanced security features</li>
-            </ul>
-            <a href="tejory.io" class="button">Learn More at Tejory.io</a>
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>Our Hardware: Secure Your Assets</h1>
+                 <p>Introducing Tejory - The next generation of digital asset security.</p>
+            </div>
+        </section>
+
+        <section class="product-showcase">
+            <div class="container product-layout">
+                <div class="product-image">
+                    <img src="images/tejory-wallet.png" alt="Tejory Hardware Wallet" class="tejory-image">
+                     </div>
+                <div class="product-details">
+                    <h2>Tejory Hardware Wallet</h2>
+                    <p>Take control of your private keys with Tejory, our cutting-edge hardware wallet designed for maximum security and ease of use. Keep your cryptocurrencies and digital assets safe from online threats.</p>
+                    <ul>
+                        <li><strong>Offline Security:</strong> Your private keys never leave the device, ensuring protection against hackers and malware.</li>
+                        <li><strong>Multi-Asset Support:</strong> Manage a wide range of cryptocurrencies and tokens securely.</li>
+                        <li><strong>User-Friendly Interface:</strong> Intuitive setup and management through a dedicated interface.</li>
+                        <li><strong>Robust Construction:</strong> Built with high-quality materials for durability.</li>
+                        <li><strong>Secure Element Chip:</strong> Industry-standard protection for cryptographic secrets.</li>
+                    </ul>
+                    <a href="http://tejory.io" target="_blank" rel="noopener noreferrer" class="cta-button">Learn More at Tejory.io</a>
+                     <p><small>You will be redirected to the official Tejory website.</small></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 K H Trading Group Inc. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> K H Trading Group Inc. All Rights Reserved.</p>
+            <p>5911 56TH Ave, Maspeth, New York 11378-2324, United States</p>
+        </div>
     </footer>
+
+     <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

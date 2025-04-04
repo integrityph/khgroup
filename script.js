@@ -1,9 +1,21 @@
-// Example of simple animation using CSS transitions.
-document.addEventListener('DOMContentLoaded', () => {
-    const hero = document.querySelector('.hero');
-    hero.style.opacity = 0;
-    setTimeout(() => {
-        hero.style.transition = 'opacity 1s ease';
-        hero.style.opacity = 1;
-    }, 500);
+document.addEventListener("DOMContentLoaded", () => {
+	const slides = document.querySelectorAll(".slide");
+	let currentIndex = 0;
+
+	function showSlide(index) {
+			slides.forEach((slide, i) => {
+					slide.classList.remove("active");
+					if (i === index) {
+							slide.classList.add("active");
+					}
+			});
+	}
+
+	function nextSlide() {
+			currentIndex = (currentIndex + 1) % slides.length;
+			showSlide(currentIndex);
+	}
+
+	showSlide(currentIndex);
+	setInterval(nextSlide, 5000);
 });
